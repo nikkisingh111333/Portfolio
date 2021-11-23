@@ -34,6 +34,26 @@
   <link rel = "icon" href =
 "..//Portfolio/nicksgallery.png"
        type = "image/x-icon">
+    <script>
+    function enter(){
+      var left=document.getElementById('left')
+      left.style.transition="0.5s all"
+        var right=document.getElementById('right')
+        right.style.transition="0.5s all"
+      left.style.opacity="1.0"
+      right.style.opacity="1.0"
+      left.style['backdrop-filter']="blur(20px)"
+      right.style['backdrop-filter']="blur(20px)"
+    }
+    function out(){
+
+        var left=document.getElementById('left')
+
+          var right=document.getElementById('right')
+          left.style.opacity="0.0"
+          right.style.opacity="0.0"
+    }
+  </script>
 </head>
 
 <body style="background-image:linear-gradient(cyan,blue,black)">
@@ -71,7 +91,7 @@
     </div>
   </header>
   <main style="background-image:linear-gradient(cyan,violet,black)">
-    <section id="hero">
+    <section id="hero" onmouseenter="enter()">
       <div id="owl-main" class="owl-carousel height-md owl-inner-nav">
         <div class="item" style="background-image: url(http://www.creativewebdesigner.in/wp-content/uploads/2017/07/slider-fullscreen-slide-2-1.jpg);">
           <div class="container">
@@ -105,6 +125,12 @@
             </div>
           </div>
         </div>
+          <div id="right" style="height:100px;width:110px;background:url(https://www.bilgilendir.com.tr/css/ionicons-2.0.1/png/512/ios7-arrow-left.png);opacity:0.0;pointer-events:none;background-size:100px 100px;;position:absolute;top:46%;transform:rotateY(180deg) scale(0.8,0.8);left:93%">
+
+      </div>
+      <div id="left" style="height:100px;width:110px;background:url(https://www.bilgilendir.com.tr/css/ionicons-2.0.1/png/512/ios7-arrow-left.png);opacity:0.0;pointer-events:none;background-size:100px 100px;position:absolute;top:46%;left:0%;transform:scale(0.8,0.8)">
+
+      </div>
 
     </section>
     <section id="product">

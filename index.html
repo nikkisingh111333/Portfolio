@@ -2,8 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3558290-4"></script>
+<head>  
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie_svg.min.js" integrity="sha512-dbFiej6dN6NDTJ8dPpy0QlgGFxeFjkaYDWIzY5PciK5O6ZKb9WwiQmTJ0BzzhS4fAved+0buPW45H9h+6SfgNQ==" crossorigin="anonymous"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -284,10 +287,11 @@ box-shadow:inset 10px 10px 37px #909496,inset -10px -10px 37px #ffffff;">
         <div class="col-lg-3 col-md-6 inner">
           <h4 style="translateX(200px) translateY(100px)">Check My Latest Work</h4>
           <div class="row  gap-xs" style="transform:scale(4.7,4.7) translateX(200px) translateY(100px)">
-            <div class="col-6 thumb">
+            <div class="col-6 thumb" onmouseenter="play()" onmouseout="stop()">
               <figure class=""><a href="https://nikkisingh111333.github.io/Portfolio/portfolio.html">
                 <img src="https://cdn.freebiesupply.com/logos/large/2x/portfolio-logo-png-transparent.png" alt=""></a></figure>
             </div>
+            <div id="svg" style="pointer-events:none"></div>
            
           </div>
         </div>
@@ -310,6 +314,25 @@ box-shadow:inset 10px 10px 37px #909496,inset -10px -10px 37px #ffffff;">
       </div>
     </div>
 </footer>
+        <script>
+
+                                  const svg = document.querySelector('#svg')
+                                  var anim = bodymovin.loadAnimation({
+
+                                    wrapper: svg,
+                                    animType: "svg",
+                                    loop: false,
+                                    hover: true,
+                                    autoplay: false,
+                                    path: "https://assets9.lottiefiles.com/packages/lf20_aujfkhek.json"
+                                  })
+                                  function play(){
+                                        anim.play()
+                                   } 
+                                   function stop(){
+                                     anim.stop()
+                                   }
+                                  </script>
   <script src="..//Portfolio/js/jquery.min.js"></script>
   <script src="..//Portfolio/js/jquery.easing.1.3.min.js"></script>
   <script src="..//Portfolio/js/jquery.form.js"></script>

@@ -7,7 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie_svg.min.js" integrity="sha512-dbFiej6dN6NDTJ8dPpy0QlgGFxeFjkaYDWIzY5PciK5O6ZKb9WwiQmTJ0BzzhS4fAved+0buPW45H9h+6SfgNQ==" crossorigin="anonymous"></script>
 
- 
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -167,8 +167,7 @@ box-shadow: 10px 10px 37px #909496, -10px -10px 37px #ffffff;;height:500px">
           </div>
           <div class="col-md-6 order-md-1 inner-top-xs inner-right-xs">
             <ul class="col-md-6 inner-top-xs inner-left-xs">
-              <h1 style="width:300px"><span class="typer" id="some-id" data-words="Parralax.,Glasmorphism.,Neuromorphism.,Claymorphism."
-                        data-delay="50" data-colors="#08605F,#177E89,purple,navy" style="color:darkblue;font-style:bold;font-size:30px"></span> 
+              <h1 style="width:300px"><span class="typer" id="some-id" style="color:darkblue;font-style:bold;font-size:30px"></span> 
                 <span style="font-size:1em;vertical-align:middle;color:blue;" class="cursor" data-cursorDisplay="|"
                         data-owner="some-id"></span></h1>
               <h2 style="margin:20px">N blah blah blah.You Just name It .I can design it...</h2>
@@ -310,6 +309,18 @@ box-shadow:inset 10px 10px 37px #909496,inset -10px -10px 37px #ffffff;">
       </div>
     </div>
 </footer>
+      <script>
+           var typed = new Typed('.typer', {
+             strings: ["Parralax.", "Glassmorphism.","Claymorphism.","Neuromorphism."],
+               typeSpeed: 30,
+               smartBackspace: true,
+               loop: true,
+               loopCount: "Infinity",
+               showCursor: true,
+               cursorChar: '|',
+               autoInsertCss: true
+           });
+      </script>
         <script>
 
                                   const svg = document.querySelector('#svg')

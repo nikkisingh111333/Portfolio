@@ -58,12 +58,16 @@
         left:-30%;
         transform:scale(0.6,0.6);
       }
-      #who-we-are{overflow:hidden}
+      #who-we-are,#me{overflow:hidden}
       #head{
         width:auto;
         transform:scale(0.7,0.7);
       }
 }
+    #dip{transition:0.6s all;}
+    #dip:hover{
+     box-shadow:0px 0px 0px #78797d, 0px 0px 0px #ffffff;;
+    }
   </style>
 </head>
 
@@ -147,7 +151,7 @@ box-shadow:inset 10px 10px 15px #78797d,inset -10px -10px 15px #ffffff;">
             <figure class="member" id="dp">
               <div class="icon-overlay icn-link">
                 <a href="#">
-                <img src="..//Portfolio/mydp.jpg" style="background: #ebeef5;
+                <img id="dip" src="..//Portfolio/mydp.jpg" style="background: #ebeef5;
                           -webkit-box-shadow: 10px 10px 15px #78797d, -10px -10px 15px #ffffff;
                            box-shadow: 10px 10px 15px #78797d, -10px -10px 15px #ffffff;" class="rounded-circle"></a></div>
               <figcaption>
